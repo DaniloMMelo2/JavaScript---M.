@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Declaração de variávei
+        // var é o tipo de variável vazia
+        var nome; //Declaração da variável vazia
+        // const é o tipo de constante
+        const registro = '000.111.333-2';
+        // let variável de escopo local
+        let idade;
+
+
+        // Declaração múltiplas
+        let sala, turma, aluno;
+        var num1 = 3, num2 = 6, num3 = 9;
+
+        // Atribuindo valor às variáveis
+        nome = 'DaN'; // Ultilizando o sinal de igualdade depois do nome da variável
+        console.log(nome);
+
+        nome = 'DaNila'; // É possível reatribuir valores para variáveis
+        console.log(nome);
+
+        // Acessando árvore do DOM e seus Method (métodos)
+        /* window.document.write('<h1>');
+        window.document.write('Salve Rapeiziiii!');
+        window.document.write('</h1>'); */
+
+        /* document.write('Aqui tem uma constante:' + registro + '<br>'); */
+        // Registro é uma constante onde não é possível alterar seu valor
+        /* registro = 'mudado'; */
+        /* document.write('Mudamos a constante para; ' + registro + '<br>');*/
+
+        nome = prompt('Diga seu nome aeeeee:');
+        idade = prompt('E sua idade cria qual é?');
+        
+        // Covertendo String para number
+        let idadeConvertida = parseInt(idade);
+
+        document.write('<h2>' + 'Salve ' + nome + '!' + '<h2>');
+        document.write( '<p>')
+        document.write( nome + ', você  tem: ' + idade + ' anos' + '<br>');
+        // INSERIR imagem
+        document.write('<img class="hole" src="NetherPortal.gif" width="300"/>');
+        document.write('<br>' + 'Clique na imagem acima e descubra o seu destino!')
+
+
+        // calculando o tempo de vida
+        let morte = idadeConvertida - ((num2 * idadeConvertida)/num3) + num1;
+        console.log(morte);
+        document.write( '</p>')
+
+        let imgClick = document.querySelector('.hole');
+        imgClick.addEventListener('click', function future(){
+           /*  alert('Tudo certo tiow!'); */
+
+        // Adivinhando o tempo de vida
+        const anoAtual = 2023;
+        document.write('<br>' + '<br>' + '<br>');
+        document.write('<p>' + nome + ', apesar dos seus ' + idade + ' anos de vida' + '<br>');
+        document.write('Ainda restam para você:' + morte + ' anos de voida' + '<br>');
+        document.write('Sendo assim você bate as botas no ano de:' + (morte + anoAtual));
+        });
+
+
+        
+    </script>
+</body>
+</html>
